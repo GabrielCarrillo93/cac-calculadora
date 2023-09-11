@@ -34,11 +34,15 @@ const limpiarMemoria = () => {
 };
 
 const masMemoria = () => {
-    pantalla.value += `+${memoria}`;
+    if (memoria !== ""){
+        pantalla.value += `+${memoria}`;
+    }
 };
 
 const menosMemoria = () => {
-    pantalla.value -= `+${memoria}`
+    if (memoria !== ""){
+        pantalla.value -= `+${memoria}`
+    }
 };
 
 //proceso
